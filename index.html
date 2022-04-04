@@ -14,33 +14,103 @@
 
     <div id="backontrack" class="sfondo_cs">
 
-        <div class="container">
+        <div class="container bg-white">
 
             <div class="row border border-3 border-primary"> 
 
                     <!-- Lato sinistro chat utenti-->
-                    <div class="col-4 d-flex border border-3 border-primary justify-content-between">
+                    <div class="col-4 border border-3 border-primary ">
 
-                        <!-- Img Utente -->
-                        <div class="d-flex border border-3 border-primary align-items-center">
-                            <img src="./images/avatar_1.jpg" class="rounded-circle" alt="">
-                            <p>Sofia</p>
+                        <!-- Prima sezione -->
+                        <div class="d-flex justify-content-between">
+                                <!-- Img Utente -->
+                            <div class="d-flex border border-3 border-primary align-items-center">
+                                <img src="./images/avatar_1.jpg" class="rounded-circle" alt="">
+                                <p>Sofia</p>
+                            </div>
 
+                            <!-- Icone chat Utente -->
+                            <div class=" border border-3 border-primary d-flex align-items-center">
+                                <i class="fa-solid fa-circle-notch p-2"></i>
+                                <i class="fa-solid fa-message p-2"></i>
+                                <i class="fa-solid fa-ellipsis-vertical p-2"></i>
+                            </div>
                         </div>
 
-                        <!-- Icone chat Utente -->
-                        <div class=" border border-3 border-primary d-flex align-items-center">
-                            <i class="fa-solid fa-circle-notch p-2"></i>
-                            <i class="fa-solid fa-message p-2"></i>
-                            <i class="fa-solid fa-ellipsis-vertical p-2"></i>
-                        </div>
+                        <!-- Seconda sezione Campana blu -->
+                        <div class="border border-secondary border-2 d-flex align-items-center bg-info p-2">
+                            <div>
+                                <i class="fa-solid fa-bell-slash text-info p-3 rounded-circle bg-white"></i>
+                            </div>
+
+                            <div>
+                                <p class="">Ricevi notifiche di nuovi messaggi</p>
+                                <p class=" text-decoration-underline text-muted">Attiva notifiche desktop</p>
+                            </div>
+                         </div>
+
+                         <!-- Terza sezione Cerca chat -->
+
+                         <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                         </div>
+
+                         <!-- Quarta sezione Lista chat -->
+
+                         <div>
+                            <ul>
+            
+                                <li class="d-flex justify-content-between p-2" v-for="(item,index) in contacts" :key="index">
+
+                                    <div class="d-flex align-items-center ">
+                                        <div>
+                                            <img src="./images/avatar{{Come metto Avatar qua dentro}}.jpg" class="rounded-circle" alt="">                             
+                                        </div>
                     
-                    </div>
-                    <!-- <i class="fa-solid fa-bell-slash"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i> -->
+                                        <div>
+                                            <p>{{item.name}}</p>
+                                             <p class="text-muted">Ultimo accesso alle 12:00</p> 
+                                        </div>
+                                     </div>
+                
+                                    <div>
+                                        <p class="text-muted">12:00</p>                         
+                                    </div>                           
+           
+                                </li>
+                                
+                            </ul>
+                        </div>
 
-                     <!-- Lato sinistro chat individuale-->
+                        
+                   
+                    </div>
+
+                     <!-- Lato destro chat individuale-->
                     <div class="col-8">
+
+                        <!-- Prima sezione Nome Chat -->
+                        <div class="border border-secondary border-2 d-flex align-items-center p-2 justify-content-between">
+                            <div class="d-flex align-items-center ">
+                                <div>
+                                    <img src="./images/avatar_1.jpg" class="rounded-circle" alt="">                             
+                                </div>
+        
+                                <div>
+                                    <p>Michele</p>
+                                    <p class="text-muted">Ultimo accesso alle 12:00</p> 
+                                </div>
+                            </div>
+    
+                            <div>
+                                <i class="fa-solid fa-magnifying-glass p-2"></i>
+                                <i class="fa-solid fa-paperclip p-2"></i>
+                                <i class="fa-solid fa-ellipsis-vertical p-2"></i>                                
+                            </div>                           
+                         </div>
+
+                         <!-- Seconda sezione Messaggi Chat -->
 
                     </div>
 
