@@ -1,0 +1,9 @@
+.sfondo_cs{
+    background-image: linear-gradient(green 10vh, grey );
+    height: 100vh;
+}
+
+img{
+    height: 50px;
+    width: auto;
+}
