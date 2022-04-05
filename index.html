@@ -61,7 +61,7 @@
                          <div>
                             <ul>
             
-                                <li class="d-flex border border-secondary border-2 justify-content-between p-2" v-for="(item,index) in contacts" :key="index">
+                                <li class="d-flex border border-secondary border-2 justify-content-between p-2" v-for="(item,index) in contacts" :key="index" @click="cambioIndex(index)">
 
                                     <div class="d-flex align-items-center ">
                                         <div>
