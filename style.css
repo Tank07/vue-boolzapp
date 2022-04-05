@@ -18,10 +18,22 @@ img{
     height: 100vh;
 }
 
+p{
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
 .inviato{
     background-color: greenyellow;
+    width: 50%;
+    border-radius: 15px;
 }
 
 .ricevuto{
     background-color: lightgray;
+    width: 50%;
+    border-radius: 15px;
 }

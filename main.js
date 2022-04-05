@@ -173,15 +173,26 @@ var app = new Vue(
                 }
             ],
 
-            indexNuovo: 0
+            indexNuovo: 0,
+            nuovoMessaggio: ""
         },
         
         methods: {
             cambioIndex: function(index){
                 this.indexNuovo = index;
                 console.log(this.indexNuovo)
+            },
+
+            invioMessaggio: function(){
+
+                let messaggioEnter = {
+                    date: dayjs().get("hour"),
+                    messagge: this.nuovoMessaggio,
+                    status: "sent",
+                }
+
+                console.log(messaggioEnter)
             }
-            
             
         }
     }
