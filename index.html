@@ -114,7 +114,7 @@
                          <div class="bg_chat">
 
                             <ul>
-                                <li v:for="(item,index) in contacts[indexNuovo].messages" :class="(item.status == `inviato`) ? `align-self-end inviato` : `align-self-start ricevuto`">
+                                <li v:for="(item,index) in contacts[indexNuovo].messages" :class="(item.status == `received`) ? `align-self-end inviato` : `align-self-start ricevuto`">
                                     <p>{{item.message}}</p>   
                                     <p>{{item.date}}</p>
                                 </li>
