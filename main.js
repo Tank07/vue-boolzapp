@@ -178,7 +178,8 @@ var app = new Vue(
         
         methods: {
             cambioIndex: function(index){
-                this.cambioIndex = index;
+                this.indexNuovo = index;
+                console.log(this.indexNuovo)
             }
             
             
