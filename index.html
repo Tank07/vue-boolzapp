@@ -25,7 +25,7 @@
                         <div class="d-flex justify-content-between border border-3 border-primary">
                                 <!-- Img Utente -->
                             <div class="d-flex align-items-center">
-                                <img :src="`./images/avatar${account.avatar}.jpg`" class="rounded-circle" alt="">
+                                <img :src="`./images/avatar${account.avatar}.jpeg`" class="rounded-circle" alt="">
                                 <p>{{account.name}}</p>
                             </div>
 
@@ -113,12 +113,12 @@
                          <!-- Seconda sezione Messaggi Chat -->
                          <div class="bg_chat">
 
-                            <ul>
+                            <!-- <ul>
                                 <li v:for="(item,index) in contacts[indexNuovo].messages" :class="(item.status == `received`) ? `align-self-end inviato` : `align-self-start ricevuto`">
                                     <p>{{item.message}}</p>   
                                     <p>{{item.date}}</p>
                                 </li>
-                            </ul>
+                            </ul> -->
 
                          </div>
                          
