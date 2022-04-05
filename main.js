@@ -185,11 +185,20 @@ var app = new Vue(
 
             invioMessaggio: function(){
 
+                let data1 = dayjs().format("DD/MM/YYYY");
+                let ora1 = dayjs().format("hour");
+                let minuti1 = dayjs().format("minute")
+
                 let messaggioEnter = {
-                    date: dayjs().get("hour"),
+                    date: `${data1} ${ora1} ${minuti1}`,
                     messagge: this.nuovoMessaggio,
                     status: "sent",
                 }
+
+                // if(!this.nuovoMessaggio == ""){
+                //     this.contacts.push(messaggioEnter);
+                //     this.nuovoMessaggio = ""
+                // }
 
                 console.log(messaggioEnter)
             }
