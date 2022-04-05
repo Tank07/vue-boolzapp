@@ -17,3 +17,11 @@ img{
     background-image: url("./images/mine.jpg");
     height: 100vh;
 }
+
+.inviato{
+    background-color: greenyellow;
+}
+
+.ricevuto{
+    background-color: lightgray;
+}

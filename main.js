@@ -5,6 +5,10 @@ var app = new Vue(
     {
         el: "#backontrack",
         data: {
+            account:{
+                name: "Tancredi",
+                avatar: "_ioo"
+            },
             contacts: [
                 {
                     name: 'Michele',
@@ -167,11 +171,15 @@ var app = new Vue(
                         }
                     ],
                 }
-            ]
+            ],
 
+            indexNuovo: 0
         },
         
         methods: {
+            cambioIndex: function(index){
+                this.cambioIndex = index;
+            }
             
             
         }
