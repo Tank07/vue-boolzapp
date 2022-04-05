@@ -1,9 +1,19 @@
 .sfondo_cs{
-    background-image: linear-gradient(green 10vh, grey );
+    background-image: linear-gradient(
+        to bottom,
+        green 0vh, 
+        green 15vh,
+        grey  15vh,
+        grey  100vh);
     height: 100vh;
 }
 
 img{
     height: 50px;
     width: auto;
+}
+
+.bg_chat{
+    background-image: url("./images/mine.jpg");
+    height: 100vh;
 }

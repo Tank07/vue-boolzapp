@@ -19,18 +19,18 @@
             <div class="row border border-3 border-primary"> 
 
                     <!-- Lato sinistro chat utenti-->
-                    <div class="col-4 border border-3 border-primary ">
+                    <div class="col-4 ">
 
                         <!-- Prima sezione -->
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between border border-3 border-primary">
                                 <!-- Img Utente -->
-                            <div class="d-flex border border-3 border-primary align-items-center">
+                            <div class="d-flex align-items-center">
                                 <img src="./images/avatar_1.jpg" class="rounded-circle" alt="">
                                 <p>Sofia</p>
                             </div>
 
                             <!-- Icone chat Utente -->
-                            <div class=" border border-3 border-primary d-flex align-items-center">
+                            <div class="d-flex align-items-center">
                                 <i class="fa-solid fa-circle-notch p-2"></i>
                                 <i class="fa-solid fa-message p-2"></i>
                                 <i class="fa-solid fa-ellipsis-vertical p-2"></i>
@@ -38,7 +38,7 @@
                         </div>
 
                         <!-- Seconda sezione Campana blu -->
-                        <div class="border border-secondary border-2 d-flex align-items-center bg-info p-2">
+                        <div class="d-flex align-items-center bg-info p-2">
                             <div>
                                 <i class="fa-solid fa-bell-slash text-info p-3 rounded-circle bg-white"></i>
                             </div>
@@ -65,7 +65,7 @@
 
                                     <div class="d-flex align-items-center ">
                                         <div>
-                                            <img src="./images/avatar{{Come metto Avatar qua dentro}}.jpg" class="rounded-circle" alt="">                             
+                                            <img :src="`./images/avatar${item.avatar}.jpg`" class="rounded-circle" alt="">                             
                                         </div>
                     
                                         <div>
@@ -111,6 +111,18 @@
                          </div>
 
                          <!-- Seconda sezione Messaggi Chat -->
+                         <div class="bg_chat">
+
+                         </div>
+                         
+                         <!-- Terza sezione Barra Scrittura messaggi -->
+                         <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-face-smile"></i>
+
+                            <input type="text" class="form-control" placeholder="Scrivi un messaggio">
+
+                            <i class="fa-solid fa-microphone"></i>
+                         </div>
 
                     </div>
 
