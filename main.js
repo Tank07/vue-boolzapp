@@ -202,6 +202,19 @@ var app = new Vue(
                 }
 
                 console.log(messaggioEnter)
+
+                let messaggioRicevuto = {
+                    date: `${data1} ${ora1}:${minuti1}:${secondi1}`,
+                    message: "ok, bro",
+                    status: "received"
+                }
+
+                setTimeout(
+                    () => {
+                        this.contacts[this.indexNuovo].messages.push(messaggioRicevuto);
+                    },
+                    2000
+                );
             }
             
         }
