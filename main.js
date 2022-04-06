@@ -174,7 +174,8 @@ var app = new Vue(
             ],
 
             indexNuovo: 0,
-            nuovoMessaggio: ""
+            nuovoMessaggio: "",
+            nomeCercato:""
         },
         
         methods: {
@@ -215,7 +216,19 @@ var app = new Vue(
                     },
                     2000
                 );
-            }
+            },
+
+            ricercaNome: function(){
+                this.contacts.forEach(element => {
+                    if (element.name.includes(this.nomeCercato)) {
+                        element.visible = true;
+                    } else {
+                        element.visible = false;
+                    }
+                    
+                });
+                
+            },
             
         }
     }
