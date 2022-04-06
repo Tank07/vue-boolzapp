@@ -116,6 +116,15 @@
 
                             <ul class="d-flex flex-column">
                                 <li class="p-2 m-2" v-for="(item,index) in contacts[indexNuovo].messages" :class="(item.status == `received`) ? `align-self-end inviato` : `align-self-start ricevuto`">
+
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item" href="#">Info messaggio</a></li>
+                                          <li><a class="dropdown-item" href="#">Cancella messaggio</a></li>
+                                        </ul>
+                                      </div>
+
                                     <p>{{item.message}}</p>   
                                     <p>{{item.date}}</p>
                                 </li>
