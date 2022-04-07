@@ -1,11 +1,11 @@
-.sfondo_cs{
+body{
+    height: 100vh;
     background-image: linear-gradient(
         to bottom,
-        green 0vh, 
-        green 15vh,
-        grey  15vh,
-        grey  100vh);
-    height: 100vh;
+        #359589 0vh, 
+        #359589 15vh,
+        #dadbd5  15vh,
+        #dadbd5  100vh);
 }
 
 img{
@@ -18,6 +18,14 @@ img{
     height: 100vh;
 }
 
+.bg_avatars{
+    background-color: #e9eaed; 
+}
+
+.bg_bell{
+    background-color: #99dafd;
+}
+
 p{
     margin-bottom: 0;
 }
@@ -27,13 +35,13 @@ ul {
 }
 
 .inviato{
-    background-color: greenyellow;
+    background-color: #d8f8bf;
     width: 50%;
     border-radius: 15px;
 }
 
 .ricevuto{
-    background-color: lightgray;
+    background-color: whitesmoke;
     width: 50%;
     border-radius: 15px;
 }

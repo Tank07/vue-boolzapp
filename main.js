@@ -220,7 +220,7 @@ var app = new Vue(
 
             ricercaNome: function(){
                 this.contacts.forEach(element => {
-                    if (element.name.includes(this.nomeCercato)) {
+                    if (element.name.toLowerCase().includes(this.nomeCercato.toLowerCase())) {
                         element.visible = true;
                     } else {
                         element.visible = false;
@@ -229,6 +229,10 @@ var app = new Vue(
                 });
                 
             },
+
+            listaData: function(index){
+                return this.contacts[index].messages[this.contacts[index].messages.lenght - 1].date
+            },          
             
         }
     }
