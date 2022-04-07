@@ -230,9 +230,9 @@ var app = new Vue(
                 
             },
 
-            listaData: function(index){
-                return this.contacts[index].messages[this.contacts[index].messages.lenght - 1].date
-            },          
+            // listaData: function(index){
+            //     return this.contacts[index].messages[this.contacts[index].messages.lenght - 1].date
+            // },     copiata, da capire come funziona     
             
         }
     }
